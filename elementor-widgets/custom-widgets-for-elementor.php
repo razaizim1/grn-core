@@ -32,6 +32,7 @@ class GrownexElementorWidget
         if (defined('ELEMENTOR_PATH') && class_exists('Elementor\Widget_Base')) {
             require_once 'about-us.php';
             require_once 'nav-menu.php';
+            require_once 'button.php';
         }
     }
 }

@@ -58,7 +58,7 @@ include_once 'addon-icon.php';
  *  Add Custom WordPress Widgets
  */
 if (class_exists('CSF')) {
-    include_once 'inc/widgets/custom-widgets.php';
+    include_once 'inc/widgets/grownex-custom-style.php';
     include_once 'inc/icons.php';
 }
 
@@ -73,7 +73,7 @@ if ('Grownex' == $theme->name || 'Grownex' == $theme->parent_theme) {
 // Registering toolkit files
 function grownexcore_files()
 {
-    wp_enqueue_style('grownexcore-custom-widgets', GROWNEX_CORE_ASSETS . 'css/custom-widgets.css', array(), GROWNEX_CORE_VERSION, 'all');
+    wp_enqueue_style('grownexcore-grownex-custom-style', GROWNEX_CORE_ASSETS . 'css/grownex-custom-style.css', array(), GROWNEX_CORE_VERSION, 'all');
 }
 add_action('wp_enqueue_scripts', 'grownexcore_files');
 /**
