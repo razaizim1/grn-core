@@ -117,19 +117,19 @@ class Nav_Menu_Widget extends Widget_Base {
         $this->add_control(
             'mobile_logo_select',
             [
-                'label' => esc_html__('Select logo Options', 'vektorcore'),
+                'label' => esc_html__('Select logo Options', 'grownexcore'),
                 'type' => \Elementor\Controls_Manager::SELECT,
                 'default' => 'default',
                 'options' => [
-                    'default' => esc_html__('Default Logo', 'vektorcore'),
-                    'custom' => esc_html__('Custom Logo', 'vektorcore'),
+                    'default' => esc_html__('Default Logo', 'grownexcore'),
+                    'custom' => esc_html__('Custom Logo', 'grownexcore'),
                 ],
             ]
         );
         $this->add_control(
             'mobile_logo',
             [
-                'label' => esc_html__('Upload Logo', 'vektorcore'),
+                'label' => esc_html__('Upload Logo', 'grownexcore'),
                 'type' => \Elementor\Controls_Manager::MEDIA,
                 'condition' => [
                     'mobile_logo_select' => 'custom',
@@ -192,7 +192,7 @@ class Nav_Menu_Widget extends Widget_Base {
         $this->start_controls_section(
             'menu_css_options',
             [
-                'label' => esc_html__(' Menu Style ', 'vektorcore'),
+                'label' => esc_html__(' Menu Style ', 'grownexcore'),
                 'tab' => \Elementor\Controls_Manager::TAB_STYLE,
             ]
         );
@@ -200,7 +200,7 @@ class Nav_Menu_Widget extends Widget_Base {
         $this->add_responsive_control(
             'menu_color',
             [
-                'label' => esc_html__('Color', 'vektorcore'),
+                'label' => esc_html__('Color', 'grownexcore'),
                 'type' => \Elementor\Controls_Manager::COLOR,
                 'selectors' => [
                     '{{WRAPPER}} .grownex-main-menu>ul>li>a' => 'color: {{VALUE}}'
@@ -210,7 +210,7 @@ class Nav_Menu_Widget extends Widget_Base {
         $this->add_responsive_control(
             'menu_hcolor',
             [
-                'label' => esc_html__('Hover Color', 'vektorcore'),
+                'label' => esc_html__('Hover Color', 'grownexcore'),
                 'type' => \Elementor\Controls_Manager::COLOR,
                 'selectors' => [
                     '{{WRAPPER}} .grownex-main-menu>ul>li>a:hover' => 'color: {{VALUE}}'
@@ -220,7 +220,7 @@ class Nav_Menu_Widget extends Widget_Base {
         $this->add_responsive_control(
             'menu_active_color',
             [
-                'label' => esc_html__('Active Color', 'vektorcore'),
+                'label' => esc_html__('Active Color', 'grownexcore'),
                 'type' => \Elementor\Controls_Manager::COLOR,
                 'selectors' => [
                     '{{WRAPPER}} .grownex-main-menu ul li.current-menu-item a' => 'color: {{VALUE}}'
@@ -238,7 +238,7 @@ class Nav_Menu_Widget extends Widget_Base {
         $this->add_responsive_control(
             'menu_margin',
             [
-                'label' => esc_html__('Margin', 'vektorcore'),
+                'label' => esc_html__('Margin', 'grownexcore'),
                 'type' => \Elementor\Controls_Manager::DIMENSIONS,
                 'size_units' => ['px', '%', 'em', 'rem', 'custom'],
                 'selectors' => [
@@ -249,7 +249,7 @@ class Nav_Menu_Widget extends Widget_Base {
         $this->add_responsive_control(
             'menu_padding',
             [
-                'label' => esc_html__('Padding', 'vektorcore'),
+                'label' => esc_html__('Padding', 'grownexcore'),
                 'type' => \Elementor\Controls_Manager::DIMENSIONS,
                 'size_units' => ['px', '%', 'em', 'rem', 'custom'],
                 'selectors' => [
@@ -263,7 +263,7 @@ class Nav_Menu_Widget extends Widget_Base {
         $this->start_controls_tab(
             'sub_menu_tab',
             [
-                'label' => esc_html__('Sub Menu', 'vektorcore'),
+                'label' => esc_html__('Sub Menu', 'grownexcore'),
             ]
         );
         $this->add_group_control(
@@ -276,7 +276,7 @@ class Nav_Menu_Widget extends Widget_Base {
         $this->add_responsive_control(
             'submenu_width',
             [
-                'label' => esc_html__('Min Width', 'vektorcore'),
+                'label' => esc_html__('Min Width', 'grownexcore'),
                 'type' => \Elementor\Controls_Manager::SLIDER,
                 'size_units' => ['px', '%', 'em', 'rem', 'custom'],
                 'range' => [
@@ -298,7 +298,7 @@ class Nav_Menu_Widget extends Widget_Base {
         $this->add_responsive_control(
             'submenu_color',
             [
-                'label' => esc_html__('Color', 'vektorcore'),
+                'label' => esc_html__('Color', 'grownexcore'),
                 'type' => \Elementor\Controls_Manager::COLOR,
                 'selectors' => [
                     '{{WRAPPER}} .main-navigation ul li.no-mega ul.sub-menu li a' => 'color: {{VALUE}}',
@@ -308,7 +308,7 @@ class Nav_Menu_Widget extends Widget_Base {
         $this->add_responsive_control(
             'submenu_hcolor',
             [
-                'label' => esc_html__('Hover Color', 'vektorcore'),
+                'label' => esc_html__('Hover Color', 'grownexcore'),
                 'type' => \Elementor\Controls_Manager::COLOR,
                 'selectors' => [
                     '{{WRAPPER}} .main-navigation ul li.no-mega ul.sub-menu li a:hover' => 'color: {{VALUE}}',
@@ -318,7 +318,7 @@ class Nav_Menu_Widget extends Widget_Base {
         $this->add_responsive_control(
             'submenu_bg',
             [
-                'label' => esc_html__('background', 'vektorcore'),
+                'label' => esc_html__('background', 'grownexcore'),
                 'type' => \Elementor\Controls_Manager::COLOR,
                 'selectors' => [
                     '{{WRAPPER}} .main-navigation ul li.no-mega ul.sub-menu' => 'background-color: {{VALUE}}',
@@ -328,7 +328,7 @@ class Nav_Menu_Widget extends Widget_Base {
         $this->add_responsive_control(
             'submenu_hbg',
             [
-                'label' => esc_html__('Hover Background', 'vektorcore'),
+                'label' => esc_html__('Hover Background', 'grownexcore'),
                 'type' => \Elementor\Controls_Manager::COLOR,
                 'selectors' => [
                     '{{WRAPPER}} .main-navigation ul li.no-mega ul.sub-menu li a:hover' => 'background-color: {{VALUE}}',
@@ -338,7 +338,7 @@ class Nav_Menu_Widget extends Widget_Base {
         $this->add_responsive_control(
             'submenu_border',
             [
-                'label' => esc_html__('Border Color', 'vektorcore'),
+                'label' => esc_html__('Border Color', 'grownexcore'),
                 'type' => \Elementor\Controls_Manager::COLOR,
                 'selectors' => [
                     '{{WRAPPER}} .main-navigation ul li.no-mega ul.sub-menu li' => 'border-color: {{VALUE}}',
@@ -348,19 +348,19 @@ class Nav_Menu_Widget extends Widget_Base {
         $this->add_responsive_control(
             'submenu_align',
             [
-                'label' => esc_html__('Alignment', 'vektorcore'),
+                'label' => esc_html__('Alignment', 'grownexcore'),
                 'type' => \Elementor\Controls_Manager::CHOOSE,
                 'options' => [
                     'left' => [
-                        'title' => esc_html__('Left', 'vektorcore'),
+                        'title' => esc_html__('Left', 'grownexcore'),
                         'icon' => 'eicon-text-align-left',
                     ],
                     'center' => [
-                        'title' => esc_html__('Center', 'vektorcore'),
+                        'title' => esc_html__('Center', 'grownexcore'),
                         'icon' => 'eicon-text-align-center',
                     ],
                     'right' => [
-                        'title' => esc_html__('Right', 'vektorcore'),
+                        'title' => esc_html__('Right', 'grownexcore'),
                         'icon' => 'eicon-text-align-right',
                     ],
                 ],
@@ -374,7 +374,7 @@ class Nav_Menu_Widget extends Widget_Base {
         $this->add_responsive_control(
             'submenu_margin',
             [
-                'label' => esc_html__('Margin', 'vektorcore'),
+                'label' => esc_html__('Margin', 'grownexcore'),
                 'type' => \Elementor\Controls_Manager::DIMENSIONS,
                 'size_units' => ['px', '%', 'em', 'rem', 'custom'],
                 'selectors' => [
@@ -385,7 +385,7 @@ class Nav_Menu_Widget extends Widget_Base {
         $this->add_responsive_control(
             'submenu_padding',
             [
-                'label' => esc_html__('Padding', 'vektorcore'),
+                'label' => esc_html__('Padding', 'grownexcore'),
                 'type' => \Elementor\Controls_Manager::DIMENSIONS,
                 'size_units' => ['px', '%', 'em', 'rem', 'custom'],
                 'selectors' => [
@@ -398,7 +398,7 @@ class Nav_Menu_Widget extends Widget_Base {
         $this->start_controls_tab(
             'mega_menu_tab',
             [
-                'label' => esc_html__('Mega Menu', 'vektorcore'),
+                'label' => esc_html__('Mega Menu', 'grownexcore'),
             ]
         );
         $this->add_group_control(
@@ -411,7 +411,7 @@ class Nav_Menu_Widget extends Widget_Base {
         $this->add_responsive_control(
             'mega_width',
             [
-                'label' => esc_html__('Box Width', 'vektorcore'),
+                'label' => esc_html__('Box Width', 'grownexcore'),
                 'type' => \Elementor\Controls_Manager::SLIDER,
                 'size_units' => ['px', '%', 'em', 'rem', 'custom'],
                 'range' => [
@@ -437,19 +437,19 @@ class Nav_Menu_Widget extends Widget_Base {
         $this->add_responsive_control(
             'mega_align',
             [
-                'label' => esc_html__('Alignment', 'vektorcore'),
+                'label' => esc_html__('Alignment', 'grownexcore'),
                 'type' => \Elementor\Controls_Manager::CHOOSE,
                 'options' => [
                     'left' => [
-                        'title' => esc_html__('Left', 'vektorcore'),
+                        'title' => esc_html__('Left', 'grownexcore'),
                         'icon' => 'eicon-text-align-left',
                     ],
                     'center' => [
-                        'title' => esc_html__('Center', 'vektorcore'),
+                        'title' => esc_html__('Center', 'grownexcore'),
                         'icon' => 'eicon-text-align-center',
                     ],
                     'right' => [
-                        'title' => esc_html__('Right', 'vektorcore'),
+                        'title' => esc_html__('Right', 'grownexcore'),
                         'icon' => 'eicon-text-align-right',
                     ],
                 ],
@@ -463,7 +463,7 @@ class Nav_Menu_Widget extends Widget_Base {
         $this->add_responsive_control(
             'mega_bg',
             [
-                'label' => esc_html__('Box bg', 'vektorcore'),
+                'label' => esc_html__('Box bg', 'grownexcore'),
                 'type' => \Elementor\Controls_Manager::COLOR,
                 'selectors' => [
                     '{{WRAPPER}} .grownex-main-menu>ul>li.mega>ul' => 'background-color: {{VALUE}}',
@@ -473,7 +473,7 @@ class Nav_Menu_Widget extends Widget_Base {
         $this->add_responsive_control(
             'mega_color',
             [
-                'label' => esc_html__('Color', 'vektorcore'),
+                'label' => esc_html__('Color', 'grownexcore'),
                 'type' => \Elementor\Controls_Manager::COLOR,
                 'selectors' => [
                     '{{WRAPPER}} .grownex-main-menu ul li.mega ul li a' => 'color: {{VALUE}}',
@@ -483,7 +483,7 @@ class Nav_Menu_Widget extends Widget_Base {
         $this->add_responsive_control(
             'mega_hcolor',
             [
-                'label' => esc_html__('Hover Color', 'vektorcore'),
+                'label' => esc_html__('Hover Color', 'grownexcore'),
                 'type' => \Elementor\Controls_Manager::COLOR,
                 'selectors' => [
                     '{{WRAPPER}} .grownex-main-menu ul li.mega ul li a:hover' => 'color: {{VALUE}}',
@@ -493,7 +493,7 @@ class Nav_Menu_Widget extends Widget_Base {
         $this->add_responsive_control(
             'mega_margin',
             [
-                'label' => esc_html__('Margin', 'vektorcore'),
+                'label' => esc_html__('Margin', 'grownexcore'),
                 'type' => \Elementor\Controls_Manager::DIMENSIONS,
                 'size_units' => ['px', '%', 'em', 'rem', 'custom'],
                 'selectors' => [
@@ -504,7 +504,7 @@ class Nav_Menu_Widget extends Widget_Base {
         $this->add_responsive_control(
             'mega_padding',
             [
-                'label' => esc_html__('Padding', 'vektorcore'),
+                'label' => esc_html__('Padding', 'grownexcore'),
                 'type' => \Elementor\Controls_Manager::DIMENSIONS,
                 'size_units' => ['px', '%', 'em', 'rem', 'custom'],
                 'selectors' => [
@@ -515,7 +515,7 @@ class Nav_Menu_Widget extends Widget_Base {
         $this->add_control(
             'mega_top',
             [
-                'label' => esc_html__('Mega Hadding', 'vektorcore'),
+                'label' => esc_html__('Mega Hadding', 'grownexcore'),
                 'type' => \Elementor\Controls_Manager::HEADING,
                 'separator' => 'before',
             ]
@@ -530,7 +530,7 @@ class Nav_Menu_Widget extends Widget_Base {
         $this->add_responsive_control(
             'mega_hadding_color',
             [
-                'label' => esc_html__('Color', 'vektorcore'),
+                'label' => esc_html__('Color', 'grownexcore'),
                 'type' => \Elementor\Controls_Manager::COLOR,
                 'selectors' => [
                     '{{WRAPPER}} .grownex-main-menu ul li.mega > ul > li > a' => 'color: {{VALUE}}',
@@ -540,7 +540,7 @@ class Nav_Menu_Widget extends Widget_Base {
         $this->add_responsive_control(
             'mega_hadding_border_color',
             [
-                'label' => esc_html__('border Color', 'vektorcore'),
+                'label' => esc_html__('border Color', 'grownexcore'),
                 'type' => \Elementor\Controls_Manager::COLOR,
                 'selectors' => [
                     '{{WRAPPER}} .grownex-main-menu ul li.mega > ul > li > a' => 'border-color: {{VALUE}}',
@@ -557,7 +557,7 @@ class Nav_Menu_Widget extends Widget_Base {
         $this->start_controls_section(
             'mobile_menu_settings',
             [
-                'label' => esc_html__('Mobile Menu', 'vektorcore'),
+                'label' => esc_html__('Mobile Menu', 'grownexcore'),
                 'tab' => \Elementor\Controls_Manager::TAB_STYLE,
             ]
         );
@@ -567,75 +567,149 @@ class Nav_Menu_Widget extends Widget_Base {
         $this->start_controls_tab(
             'mobile_menu_icon_tab',
             [
-                'label' => esc_html__('Icon', 'vektorcore'),
+                'label' => esc_html__('Icon', 'grownexcore'),
             ]
         );
         $this->add_group_control(
             \Elementor\Group_Control_Typography::get_type(),
             [
                 'name' => 'mobile_icon_size',
-                'selector' => '{{WRAPPER}} .vektor-menu-toggle',
+                'selector' => '{{WRAPPER}} .grownex-toggle-menu',
             ]
         );
         $this->add_responsive_control(
             'mobile_icon_color',
             [
-                'label' => esc_html__('Icon Color', 'vektorcore'),
+                'label' => esc_html__('Icon Color', 'grownexcore'),
                 'type' => \Elementor\Controls_Manager::COLOR,
                 'selectors' => [
-                    '{{WRAPPER}} .vektor-menu-toggle' => 'color: {{VALUE}}',
+                    '{{WRAPPER}} .grownex-toggle-menu' => 'color: {{VALUE}}',
                 ],
             ]
         );
         $this->add_responsive_control(
             'mobile_icon_hcolor',
             [
-                'label' => esc_html__('Icon Hover Color', 'vektorcore'),
+                'label' => esc_html__('Icon Hover Color', 'grownexcore'),
                 'type' => \Elementor\Controls_Manager::COLOR,
                 'selectors' => [
-                    '{{WRAPPER}} .vektor-menu-toggle:hover' => 'color: {{VALUE}}',
+                    '{{WRAPPER}} .grownex-toggle-menu:hover' => 'color: {{VALUE}}',
                 ],
             ]
         );
         $this->add_responsive_control(
             'mobile_icon_bg',
             [
-                'label' => esc_html__('background', 'vektorcore'),
+                'label' => esc_html__('background', 'grownexcore'),
                 'type' => \Elementor\Controls_Manager::COLOR,
                 'selectors' => [
-                    '{{WRAPPER}} .vektor-menu-toggle' => 'background-color: {{VALUE}}',
+                    '{{WRAPPER}} .grownex-toggle-menu' => 'background-color: {{VALUE}}',
                 ],
             ]
         );
         $this->add_responsive_control(
             'mobile_icon_hbg',
             [
-                'label' => esc_html__('Hover background', 'vektorcore'),
+                'label' => esc_html__('Hover background', 'grownexcore'),
                 'type' => \Elementor\Controls_Manager::COLOR,
                 'selectors' => [
-                    '{{WRAPPER}} .vektor-menu-toggle:hover' => 'background-color: {{VALUE}}',
+                    '{{WRAPPER}} .grownex-toggle-menu:hover' => 'background-color: {{VALUE}}',
                 ],
             ]
         );
         $this->add_responsive_control(
             'mobile_icon_margin',
             [
-                'label' => esc_html__('Margin', 'vektorcore'),
+                'label' => esc_html__('Margin', 'grownexcore'),
                 'type' => \Elementor\Controls_Manager::DIMENSIONS,
                 'size_units' => ['px', '%', 'em', 'rem', 'custom'],
                 'selectors' => [
-                    '{{WRAPPER}} .vektor-menu-toggle' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+                    '{{WRAPPER}} .grownex-toggle-menu' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
                 ],
             ]
         );
         $this->add_responsive_control(
             'mobile_icon_padding',
             [
-                'label' => esc_html__('Padding', 'vektorcore'),
+                'label' => esc_html__('Padding', 'grownexcore'),
                 'type' => \Elementor\Controls_Manager::DIMENSIONS,
                 'size_units' => ['px', '%', 'em', 'rem', 'custom'],
                 'selectors' => [
-                    '{{WRAPPER}} .vektor-menu-toggle' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+                    '{{WRAPPER}} .grownex-toggle-menu' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+                ],
+            ]
+        );
+
+        $this->add_control(
+            'close_btn',
+            [
+                'label' => esc_html__('Close Button', 'textdomain'),
+                'type' => \Elementor\Controls_Manager::HEADING,
+                'separator' => 'before',
+            ]
+        );
+        $this->add_group_control(
+            \Elementor\Group_Control_Typography::get_type(),
+            [
+                'name' => 'close_btn_size',
+                'selector' => '{{WRAPPER}} .grownex-toggle-menu.close-icon',
+            ]
+        );
+        $this->add_responsive_control(
+            'close_btn_color',
+            [
+                'label' => esc_html__('Icon Color', 'grownexcore'),
+                'type' => \Elementor\Controls_Manager::COLOR,
+                'selectors' => [
+                    '{{WRAPPER}} .grownex-toggle-menu.close-icon' => 'color: {{VALUE}}',
+                ],
+            ]
+        );
+        $this->add_responsive_control(
+            'close_btn_hcolor',
+            [
+                'label' => esc_html__('Icon Hover Color', 'grownexcore'),
+                'type' => \Elementor\Controls_Manager::COLOR,
+                'selectors' => [
+                    '{{WRAPPER}} .grownex-toggle-menu.close-icon:hover' => 'color: {{VALUE}}',
+                ],
+            ]
+        );
+        $this->add_responsive_control(
+            'close_btn_bg',
+            [
+                'label' => esc_html__('background', 'grownexcore'),
+                'type' => \Elementor\Controls_Manager::COLOR,
+                'selectors' => [
+                    '{{WRAPPER}} .grownex-toggle-menu.close-icon' => 'background-color: {{VALUE}}',
+                ],
+            ]
+        );
+        $this->add_responsive_control(
+            'close_btn_hbg',
+            [
+                'label' => esc_html__('Hover background', 'grownexcore'),
+                'type' => \Elementor\Controls_Manager::COLOR,
+                'selectors' => [
+                    '{{WRAPPER}} .grownex-toggle-menu.close-icon:hover' => 'background-color: {{VALUE}}',
+                ],
+            ]
+        );
+        $this->add_group_control(
+            \Elementor\Group_Control_Border::get_type(),
+            [
+                'name' => 'close_btn_border',
+                'selector' => '{{WRAPPER}} .grownex-toggle-menu.close-icon',
+            ]
+        );
+        $this->add_responsive_control(
+            'close_btn_border_radius',
+            [
+                'label' => esc_html__('Border Radius', 'textdomain'),
+                'type' => \Elementor\Controls_Manager::DIMENSIONS,
+                'size_units' => ['px', '%', 'em'],
+                'selectors' => [
+                    '{{WRAPPER}} .grownex-toggle-menu.close-icon' => 'border-radius: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
                 ],
             ]
         );
@@ -644,13 +718,13 @@ class Nav_Menu_Widget extends Widget_Base {
         $this->start_controls_tab(
             'mobile_menu_logo_tab',
             [
-                'label' => esc_html__('Logo', 'vektorcore'),
+                'label' => esc_html__('Logo', 'grownexcore'),
             ]
         );
         $this->add_responsive_control(
             'mobile_logo_width',
             [
-                'label' => esc_html__('Width', 'vektorcore'),
+                'label' => esc_html__('Width', 'grownexcore'),
                 'type' => \Elementor\Controls_Manager::SLIDER,
                 'size_units' => ['px', '%', 'em', 'rem', 'custom'],
                 'range' => [
@@ -665,7 +739,7 @@ class Nav_Menu_Widget extends Widget_Base {
                     ],
                 ],
                 'selectors' => [
-                    '{{WRAPPER}} .vektor-menu-wrapper .mobile-logo img' => 'width: {{SIZE}}{{UNIT}};',
+                    '{{WRAPPER}} .grownex-menu-wrapper .mobile-logo img' => 'width: {{SIZE}}{{UNIT}};',
                 ],
             ]
         );
@@ -674,54 +748,54 @@ class Nav_Menu_Widget extends Widget_Base {
             [
                 'name' => 'mobile_logo_bg',
                 'types' => ['classic', 'gradient', 'video'],
-                'selector' => '{{WRAPPER}} .vektor-menu-wrapper .mobile-logo',
+                'selector' => '{{WRAPPER}} .grownex-menu-wrapper .mobile-logo',
             ]
         );
         $this->add_responsive_control(
             'mobile_menu_align',
             [
-                'label' => esc_html__('Alignment', 'vektorcore'),
+                'label' => esc_html__('Alignment', 'grownexcore'),
                 'type' => \Elementor\Controls_Manager::CHOOSE,
                 'options' => [
                     'left' => [
-                        'title' => esc_html__('Left', 'vektorcore'),
+                        'title' => esc_html__('Left', 'grownexcore'),
                         'icon' => 'eicon-text-align-left',
                     ],
                     'center' => [
-                        'title' => esc_html__('Center', 'vektorcore'),
+                        'title' => esc_html__('Center', 'grownexcore'),
                         'icon' => 'eicon-text-align-center',
                     ],
                     'right' => [
-                        'title' => esc_html__('Right', 'vektorcore'),
+                        'title' => esc_html__('Right', 'grownexcore'),
                         'icon' => 'eicon-text-align-right',
                     ],
                 ],
                 'default' => 'center',
                 'toggle' => true,
                 'selectors' => [
-                    '{{WRAPPER}} .vektor-menu-wrapper .mobile-logo' => 'text-align: {{VALUE}};',
+                    '{{WRAPPER}} .grownex-menu-wrapper .mobile-logo' => 'text-align: {{VALUE}};',
                 ],
             ]
         );
         $this->add_responsive_control(
             'mobile_logo_margin',
             [
-                'label' => esc_html__('Margin', 'vektorcore'),
+                'label' => esc_html__('Margin', 'grownexcore'),
                 'type' => \Elementor\Controls_Manager::DIMENSIONS,
                 'size_units' => ['px', '%', 'em', 'rem', 'custom'],
                 'selectors' => [
-                    '{{WRAPPER}} .vektor-menu-wrapper .mobile-logo' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+                    '{{WRAPPER}} .grownex-menu-wrapper .mobile-logo' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
                 ],
             ]
         );
         $this->add_responsive_control(
             'mobile_logo_padding',
             [
-                'label' => esc_html__('Padding', 'vektorcore'),
+                'label' => esc_html__('Padding', 'grownexcore'),
                 'type' => \Elementor\Controls_Manager::DIMENSIONS,
                 'size_units' => ['px', '%', 'em', 'rem', 'custom'],
                 'selectors' => [
-                    '{{WRAPPER}} .vektor-menu-wrapper .mobile-logo' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+                    '{{WRAPPER}} .grownex-menu-wrapper .mobile-logo' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
                 ],
             ]
         );
@@ -730,82 +804,82 @@ class Nav_Menu_Widget extends Widget_Base {
         $this->start_controls_tab(
             'mobile_menu_tab',
             [
-                'label' => esc_html__('Menu', 'vektorcore'),
+                'label' => esc_html__('Menu', 'grownexcore'),
             ]
         );
         $this->add_group_control(
             \Elementor\Group_Control_Typography::get_type(),
             [
                 'name' => 'mobile_menu_typo',
-                'selector' => '{{WRAPPER}} .vektor-mobile-menu ul li a',
+                'selector' => '{{WRAPPER}} .grownex-mobile-menu ul li a',
             ]
         );
         $this->add_responsive_control(
             'mobile-menu_color',
             [
-                'label' => esc_html__('Color', 'vektorcore'),
+                'label' => esc_html__('Color', 'grownexcore'),
                 'type' => \Elementor\Controls_Manager::COLOR,
                 'selectors' => [
-                    '{{WRAPPER}} .vektor-mobile-menu ul li a' => 'color: {{VALUE}}',
+                    '{{WRAPPER}} .grownex-mobile-menu ul li a' => 'color: {{VALUE}}',
                 ],
             ]
         );
         $this->add_responsive_control(
             'mobile_menu_active',
             [
-                'label' => esc_html__('Active Color', 'vektorcore'),
+                'label' => esc_html__('Active Color', 'grownexcore'),
                 'type' => \Elementor\Controls_Manager::COLOR,
                 'selectors' => [
-                    '{{WRAPPER}} .vektor-mobile-menu ul li.vektor-active>a' => 'color: {{VALUE}}',
+                    '{{WRAPPER}} .grownex-mobile-menu ul li.grownex-active>a' => 'color: {{VALUE}}',
                 ],
             ]
         );
         $this->add_responsive_control(
             'border_color',
             [
-                'label' => esc_html__('Border Color', 'vektorcore'),
+                'label' => esc_html__('Border Color', 'grownexcore'),
                 'type' => \Elementor\Controls_Manager::COLOR,
                 'selectors' => [
-                    '{{WRAPPER}} .vektor-mobile-menu ul li' => 'border-color: {{VALUE}}',
+                    '{{WRAPPER}} .grownex-mobile-menu ul li' => 'border-color: {{VALUE}}',
                 ],
             ]
         );
         $this->add_responsive_control(
             'mobile_menu_bg',
             [
-                'label' => esc_html__('Background Color', 'vektorcore'),
+                'label' => esc_html__('Background Color', 'grownexcore'),
                 'type' => \Elementor\Controls_Manager::COLOR,
                 'selectors' => [
-                    '{{WRAPPER}} .vektor-menu-wrapper .vektor-menu-area' => 'background-color: {{VALUE}}',
+                    '{{WRAPPER}} .grownex-menu-wrapper .grownex-menu-area' => 'background-color: {{VALUE}}',
                 ],
             ]
         );
         $this->add_responsive_control(
             'margin',
             [
-                'label' => esc_html__('Margin', 'vektorcore'),
+                'label' => esc_html__('Margin', 'grownexcore'),
                 'type' => \Elementor\Controls_Manager::DIMENSIONS,
                 'size_units' => ['px', '%', 'em', 'rem', 'custom'],
                 'selectors' => [
-                    '{{WRAPPER}} .vektor-mobile-menu ul li a' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+                    '{{WRAPPER}} .grownex-mobile-menu ul li a' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
                 ],
             ]
         );
         $this->add_responsive_control(
             'mobile_menu_padding',
             [
-                'label' => esc_html__('Padding', 'vektorcore'),
+                'label' => esc_html__('Padding', 'grownexcore'),
                 'type' => \Elementor\Controls_Manager::DIMENSIONS,
                 'size_units' => ['px', '%', 'em', 'rem', 'custom'],
                 'selectors' => [
-                    '{{WRAPPER}} .vektor-mobile-menu ul li a' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+                    '{{WRAPPER}} .grownex-mobile-menu ul li a' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
                 ],
             ]
         );
         $this->add_control(
             'mobile_menu_arrow_note',
             [
-                'label' => esc_html__('Icon Options', 'vektorcore'),
+                'label' => esc_html__('Icon Options', 'grownexcore'),
                 'type' => \Elementor\Controls_Manager::HEADING,
                 'separator' => 'before',
             ]
@@ -814,26 +888,26 @@ class Nav_Menu_Widget extends Widget_Base {
             \Elementor\Group_Control_Typography::get_type(),
             [
                 'name' => 'mobile_menu_arrow_typo',
-                'selector' => '{{WRAPPER}} .vektor-mobile-menu ul .vektor-item-has-children>a .vektor-mean-expand',
+                'selector' => '{{WRAPPER}} .grownex-mobile-menu ul .grownex-item-has-children>a .grownex-mean-expand',
             ]
         );
         $this->add_responsive_control(
             'mobile_arrow_color',
             [
-                'label' => esc_html__(' Icon Color', 'vektorcore'),
+                'label' => esc_html__(' Icon Color', 'grownexcore'),
                 'type' => \Elementor\Controls_Manager::COLOR,
                 'selectors' => [
-                    '{{WRAPPER}} .vektor-mobile-menu ul .vektor-item-has-children>a .vektor-mean-expand' => 'color: {{VALUE}}',
+                    '{{WRAPPER}} .grownex-mobile-menu ul .grownex-item-has-children>a .grownex-mean-expand' => 'color: {{VALUE}}',
                 ],
             ]
         );
         $this->add_responsive_control(
             'mobile_arrow_icon_bg',
             [
-                'label' => esc_html__('Background Color', 'vektorcore'),
+                'label' => esc_html__('Background Color', 'grownexcore'),
                 'type' => \Elementor\Controls_Manager::COLOR,
                 'selectors' => [
-                    '{{WRAPPER}} .vektor-mobile-menu ul .vektor-item-has-children>a .vektor-mean-expand' => 'background-color: {{VALUE}}',
+                    '{{WRAPPER}} .grownex-mobile-menu ul .grownex-item-has-children>a .grownex-mean-expand' => 'background-color: {{VALUE}}',
                 ],
             ]
         );
@@ -882,7 +956,7 @@ class Nav_Menu_Widget extends Widget_Base {
                     <?php
                     }
                     ?>
-                    <button class="grownex-toggle-menu"><i class="fas fa-times"></i></button>
+                    <button class="grownex-toggle-menu close-icon"><i class="fas fa-times"></i></button>
                 </div>
                 <div class="grownex-mobile-menu">
                     <?php
