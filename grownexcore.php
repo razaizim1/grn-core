@@ -1,8 +1,8 @@
 <?php
 /*
 Plugin Name: Grownex Core
-Author: ThemePul
-Author URI: http://themepul.com
+Author: Grownex
+Author URI: http://grownex.com
 Version: 1.0.1
 Description: This plugin is Required for Grownex WordPress theme
 Text Domain: grownexcore
@@ -48,11 +48,6 @@ include_once 'elementor-widgets/hf-builder/header-footer-builder.php';
  *  Add Grownex Core Function
  */
 include_once 'inc/grownexcore-functions.php';
-
-/*
- *  Add Demo Function
- */
-include_once 'inc/demo.php';
 
 /*
  *  Add Elementor Addons Icon

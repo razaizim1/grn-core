@@ -23,7 +23,7 @@ class GrownexElementorWidget
 
     public function widget_scripts()
     {
-        // wp_enqueue_script('grownex-backend-script', GROWNEX_CORE_ASSETS . 'js/grownex-backend.js', array('jquery'), true, true);
+        wp_enqueue_script('grownex-backend-script', GROWNEX_CORE_ASSETS . 'js/grownex-elementor-editor.js', array('jquery'), true, true);
     }
 
     public function grownexcore_elementor_widgets()
@@ -31,6 +31,7 @@ class GrownexElementorWidget
         // Check if the Elementor plugin has been installed / activated.
         if (defined('ELEMENTOR_PATH') && class_exists('Elementor\Widget_Base')) {
             require_once 'about-us.php';
+            require_once 'nav-menu.php';
         }
     }
 }
